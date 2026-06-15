@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage ('Checkout'){
-            steps { git 'https://github.com/repo/app'}
+            steps { git 'https://github.com/Adarshpal23/Testing_folder.git'}
         }
         stage ('Build'){
             steps { sh 'mvn clean install'}
